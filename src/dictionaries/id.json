@@ -1,28 +1,29 @@
 {
   "common": {
-    "appName": "Amir App",
-    "loading": "Memuat...",
-    "error": "Terjadi kesalahan",
+    "appName": "RS Ambulatory Care",
+    "hospitalTagline": "Pusat Layanan Rawat Jalan Terpadu & Terpercaya",
+    "emergencyHotline": "119 / (021) 555-0911",
+    "emergencyText": "Gawat Darurat 24 Jam",
+    "bookAppointment": "Buat Janji Konsultasi",
+    "viewSchedule": "Lihat Jadwal Praktik",
+    "loading": "Memuat data...",
+    "error": "Terjadi kesalahan sistem",
     "retry": "Coba Lagi",
     "back": "Kembali",
     "next": "Selanjutnya",
     "save": "Simpan",
     "cancel": "Batal",
-    "delete": "Hapus",
-    "edit": "Ubah",
-    "search": "Cari",
     "close": "Tutup",
-    "yes": "Ya",
-    "no": "Tidak",
+    "search": "Cari dokter atau spesialisasi...",
     "or": "atau",
     "and": "dan"
   },
   "nav": {
     "home": "Beranda",
-    "about": "Tentang",
-    "contact": "Kontak",
-    "menu": "Menu",
-    "language": "Bahasa"
+    "services": "Layanan & Poliklinik",
+    "doctors": "Jadwal & Dokter",
+    "contact": "Kontak & Lokasi",
+    "quickBooking": "Reservasi Cepat"
   },
   "theme": {
     "label": "Tema",
@@ -30,49 +31,47 @@
     "dark": "Gelap",
     "system": "Sistem"
   },
-  "home": {
-    "title": "Selamat Datang",
-    "subtitle": "Untuk memulai, edit file page.tsx.",
-    "description": "Mencari titik awal atau instruksi lebih lanjut? Kunjungi",
-    "templates": "Template",
-    "learning": "Pusat Belajar",
-    "deployNow": "Deploy Sekarang",
-    "documentation": "Dokumentasi"
-  },
   "metadata": {
-    "title": "Amir App",
-    "description": "Amir App — Aplikasi Web Progressive"
+    "title": "RS Ambulatory Care: Layanan Rawat Jalan Terpadu & Spesialis",
+    "description": "Portal resmi RS Ambulatory Care. Layanan rawat jalan cepat, dokter spesialis berpengalaman, fasilitas laboratorium dan radiologi modern."
   },
-  "error": {
-    "notFound": "Halaman tidak ditemukan",
-    "notFoundDescription": "Maaf, halaman yang Anda cari tidak ada.",
-    "serverError": "Kesalahan Server",
-    "serverErrorDescription": "Terjadi kesalahan pada server. Silakan coba lagi nanti.",
-    "goHome": "Kembali ke Beranda"
+  "home": {
+    "heroBadge": "Layanan Rawat Jalan Unggulan",
+    "heroTitle": "Pelayanan Rawat Jalan Cepat, Nyaman, dan Terintegrasi",
+    "heroDescription": "RS Ambulatory Care menyediakan akses langsung ke dokter spesialis terkemuka, penunjang medis modern, dan sistem reservasi online tanpa antrean panjang.",
+    "ctaPrimary": "Pilih Dokter & Jadwal",
+    "ctaSecondary": "Kontak Gawat Darurat",
+    "triageTitle": "Jalur Cepat Pasien Rawat Jalan",
+    "triageDesc": "Pendaftaran instan, rekam medis digital terpadu, dan pengambilan obat langsung di farmasi terpadu.",
+    "servicesHeading": "Layanan Poliklinik Spesialis",
+    "servicesSubheading": "Klinik rawat jalan kami didukung oleh dokter spesialis dan subspesialis dengan standar mutu pelayanan medis tinggi.",
+    "doctorsHeading": "Tim Dokter Spesialis Kami",
+    "doctorsSubheading": "Jadwal praktik terjadwal rapi dan konsultasi mendalam untuk kesehatan Anda dan keluarga.",
+    "flowHeading": "Alur Pemeriksaan Rawat Jalan",
+    "flowSubheading": "Empat langkah teratur dari reservasi hingga penyelesaian konsultasi dengan waktu tunggu minimal.",
+    "facilitiesHeading": "Fasilitas Penunjang Medis",
+    "facilitiesSubheading": "Teknologi diagnostik terkini untuk hasil pemeriksaan akurat dan cepat."
+  },
+  "booking": {
+    "modalTitle": "Pendaftaran Janji Temu Rawat Jalan",
+    "modalSubtitle": "Silakan lengkapi formulir reservasi untuk memilih dokter dan jadwal kunjungan.",
+    "patientName": "Nama Lengkap Pasien",
+    "patientPhone": "Nomor WhatsApp / Telepon",
+    "selectClinic": "Pilih Poliklinik",
+    "selectDoctor": "Pilih Dokter Spesialis",
+    "appointmentDate": "Tanggal Kunjungan",
+    "timeSession": "Sesi Waktu Konsultasi",
+    "notes": "Keluhan Singkat (Opsional)",
+    "submitBtn": "Konfirmasi Pendaftaran",
+    "successTitle": "Reservasi Berhasil Dibuat!",
+    "successMessage": "Tiket pendaftaran rawat jalan Anda telah tercatat dalam sistem kami.",
+    "ticketNumber": "Nomor Registrasi",
+    "queueHint": "Mohon hadir 15 menit sebelum waktu konsultasi untuk proses verifikasi data di loket registrasi."
   },
   "footer": {
-    "copyright": "© {year} Amir App. Semua hak dilindungi.",
-    "madeWith": "Dibuat dengan"
-  },
-  "demo": {
-    "title": "Enkripsi & Penyamaran ID",
-    "subtitle": "Keamanan tingkat tinggi & URL yang bersih untuk Next.js",
-    "intro": "Halaman ini menunjukkan implementasi dari dua teknik pengamanan ID yang telah diintegrasikan ke dalam template ini.",
-    "obfuscationTitle": "1. Penyamaran ID (Sqids)",
-    "obfuscationDesc": "Mengubah ID integer berurutan (misal dari database) menjadi string acak pendek dan ramah URL. Cocok untuk menyembunyikan ID agar tidak ditebak.",
-    "obfuscationPlaceholder": "Masukkan ID angka positif (misal: 12345)",
-    "obfuscateButton": "Samarkan ID",
-    "deobfuscateButton": "Kembalikan ID",
-    "encryptionTitle": "2. Enkripsi Kriptografis (AES-256-GCM)",
-    "encryptionDesc": "Enkripsi tingkat tinggi yang aman, terautentikasi (AES-GCM), dan anti-manipulasi. Hanya berjalan di sisi server (Server Component / Action).",
-    "encryptionPlaceholder": "Masukkan teks atau UUID sensitif",
-    "encryptButton": "Enkripsi Teks",
-    "decryptButton": "Dekripsi Teks",
-    "result": "Hasil",
-    "original": "Asli",
-    "processed": "Hasil Proses",
-    "errorInvalidNumber": "Silakan masukkan angka positif yang valid.",
-    "errorEmptyText": "Teks tidak boleh kosong.",
-    "success": "Sukses!"
+    "about": "RS Ambulatory Care berdedikasi memberikan perawatan rawat jalan berkualitas tinggi dengan mengutamakan keselamatan, kenyamanan, dan efisiensi waktu pasien.",
+    "operationalHours": "Jam Operasional Poliklinik: Senin - Sabtu: 07:30 - 21:00 WIB | IGD: 24 Jam",
+    "address": "Jl. Kesehatan Terpadu No. 88, Kawasan Medis Sentral, Jakarta",
+    "copyright": "© 2026 RS Ambulatory Care. Seluruh hak cipta dilindungi undang-undang."
   }
 }

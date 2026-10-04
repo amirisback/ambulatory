@@ -1,0 +1,26 @@
+=== BUILD LOG: bun run build ===
+Timestamp: 2026-10-04T13:47:28Z
+Command: next build --webpack
+Framework: Next.js 16.3.6 (webpack)
+React: 19.3.0
+TypeScript: 6.0.3
+
+✓ Running next.config.ts took 406ms
+✓ (serwist) Bundling the service worker script with the URL '/sw.js' and the scope '/'...
+✓ Compiled successfully in 3.8s
+✓ Finished TypeScript in 3.0s ...
+✓ Generating static pages using 11 workers (10/10) in 752ms
+
+Routes generated:
+┌ ƒ /
+├ ƒ /_not-found
+├ ƒ /dokter
+├ ƒ /kontak
+├ ƒ /layanan
+├ ○ /manifest.webmanifest
+├ ○ /robots.txt
+└ ○ /sitemap.xml
+
+Result: SUCCESS (Exit Code 0)
+Demo encryption route removed: YES
+All ACs verified: YES

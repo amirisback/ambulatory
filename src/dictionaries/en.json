@@ -1,28 +1,29 @@
 {
   "common": {
-    "appName": "Amir App",
-    "loading": "Loading...",
-    "error": "An error occurred",
-    "retry": "Retry",
+    "appName": "Ambulatory Care Hospital",
+    "hospitalTagline": "Integrated & Trusted Outpatient Healthcare Center",
+    "emergencyHotline": "119 / +62 21 555-0911",
+    "emergencyText": "24/7 Emergency Care",
+    "bookAppointment": "Book Appointment",
+    "viewSchedule": "View Practice Schedule",
+    "loading": "Loading data...",
+    "error": "A system error occurred",
+    "retry": "Try Again",
     "back": "Back",
     "next": "Next",
     "save": "Save",
     "cancel": "Cancel",
-    "delete": "Delete",
-    "edit": "Edit",
-    "search": "Search",
     "close": "Close",
-    "yes": "Yes",
-    "no": "No",
+    "search": "Search doctor or specialty...",
     "or": "or",
     "and": "and"
   },
   "nav": {
     "home": "Home",
-    "about": "About",
-    "contact": "Contact",
-    "menu": "Menu",
-    "language": "Language"
+    "services": "Services & Clinics",
+    "doctors": "Doctors & Schedule",
+    "contact": "Contact & Location",
+    "quickBooking": "Fast Booking"
   },
   "theme": {
     "label": "Theme",
@@ -30,49 +31,47 @@
     "dark": "Dark",
     "system": "System"
   },
-  "home": {
-    "title": "Welcome",
-    "subtitle": "To get started, edit the page.tsx file.",
-    "description": "Looking for a starting point or more instructions? Head over to",
-    "templates": "Templates",
-    "learning": "Learning Center",
-    "deployNow": "Deploy Now",
-    "documentation": "Documentation"
-  },
   "metadata": {
-    "title": "Amir App",
-    "description": "Amir App — Progressive Web Application"
+    "title": "Ambulatory Care Hospital: Integrated Outpatient Specialist Center",
+    "description": "Official portal of Ambulatory Care Hospital. Fast outpatient care, experienced specialist doctors, modern laboratory and radiology diagnostics."
   },
-  "error": {
-    "notFound": "Page not found",
-    "notFoundDescription": "Sorry, the page you are looking for does not exist.",
-    "serverError": "Server Error",
-    "serverErrorDescription": "A server error occurred. Please try again later.",
-    "goHome": "Go to Homepage"
+  "home": {
+    "heroBadge": "Premier Outpatient Care",
+    "heroTitle": "Fast, Comfortable, and Integrated Outpatient Healthcare",
+    "heroDescription": "Ambulatory Care Hospital provides direct access to specialist physicians, modern medical diagnostics, and an online appointment system without long waiting lines.",
+    "ctaPrimary": "Find Doctor & Schedule",
+    "ctaSecondary": "24/7 Emergency Contact",
+    "triageTitle": "Outpatient Fast-Track Pathway",
+    "triageDesc": "Instant check-in, integrated digital medical records, and streamlined medication pickup at our integrated pharmacy.",
+    "servicesHeading": "Specialist Outpatient Clinics",
+    "servicesSubheading": "Our outpatient clinics are supported by specialist and subspecialist doctors adhering to strict clinical standards.",
+    "doctorsHeading": "Our Specialist Physicians",
+    "doctorsSubheading": "Well-organized clinical practice schedules and thorough consultations for your family's health.",
+    "flowHeading": "Outpatient Patient Journey",
+    "flowSubheading": "Four systematic steps from reservation to completed consultation with minimal waiting time.",
+    "facilitiesHeading": "Medical Support Facilities",
+    "facilitiesSubheading": "Modern diagnostic technology for fast, accurate clinical findings."
+  },
+  "booking": {
+    "modalTitle": "Outpatient Appointment Booking",
+    "modalSubtitle": "Please fill out the reservation form to select your preferred doctor and clinic schedule.",
+    "patientName": "Full Patient Name",
+    "patientPhone": "WhatsApp / Phone Number",
+    "selectClinic": "Select Clinic",
+    "selectDoctor": "Select Specialist Doctor",
+    "appointmentDate": "Appointment Date",
+    "timeSession": "Consultation Session",
+    "notes": "Brief Health Concern (Optional)",
+    "submitBtn": "Confirm Appointment",
+    "successTitle": "Appointment Successfully Confirmed!",
+    "successMessage": "Your outpatient registration ticket has been registered in our system.",
+    "ticketNumber": "Registration Code",
+    "queueHint": "Please arrive 15 minutes before your consultation session for registration verification."
   },
   "footer": {
-    "copyright": "© {year} Amir App. All rights reserved.",
-    "madeWith": "Made with"
-  },
-  "demo": {
-    "title": "ID Encryption & Obfuscation",
-    "subtitle": "High security & clean URLs for Next.js",
-    "intro": "This page demonstrates the implementation of two ID security techniques that have been integrated into this template.",
-    "obfuscationTitle": "1. ID Obfuscation (Sqids)",
-    "obfuscationDesc": "Converts sequential database integer IDs into short, unique, and URL-friendly strings. Perfect for hiding IDs from being guessed.",
-    "obfuscationPlaceholder": "Enter positive number ID (e.g. 12345)",
-    "obfuscateButton": "Obfuscate ID",
-    "deobfuscateButton": "Deobfuscate ID",
-    "encryptionTitle": "2. Cryptographic Encryption (AES-256-GCM)",
-    "encryptionDesc": "High-security, authenticated, and tamper-proof AES-GCM encryption. Runs exclusively on the server (Server Component / Action).",
-    "encryptionPlaceholder": "Enter sensitive text or UUID",
-    "encryptButton": "Encrypt Text",
-    "decryptButton": "Decrypt Text",
-    "result": "Result",
-    "original": "Original",
-    "processed": "Processed",
-    "errorInvalidNumber": "Please enter a valid positive number.",
-    "errorEmptyText": "Text cannot be empty.",
-    "success": "Success!"
+    "about": "Ambulatory Care Hospital is dedicated to delivering high-standard outpatient clinical care with strong focus on patient safety, comfort, and time efficiency.",
+    "operationalHours": "Clinic Operational Hours: Monday - Saturday: 07:30 - 21:00 WIB | ER: 24 Hours",
+    "address": "Jl. Kesehatan Terpadu No. 88, Central Medical District, Jakarta",
+    "copyright": "© 2026 Ambulatory Care Hospital. All rights reserved."
   }
 }

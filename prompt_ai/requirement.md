@@ -1,10 +1,10 @@
 ## 🧠 Context
 
 - **Nama Website** Diserahkan ke Ai
-- **Objective:** Membangun website **Warung Kopi Nusantara** — Landing page kedai kopi artisan dengan online ordering.
+- **Objective:** Membangun website **Ambulatory** — Landing page rumah sakit dengan layanan dokter dan pasien.
 - **Project Base:** Repository ini (`Init-nextjs-app`) — sudah ter-setup dengan Next.js 16, Tailwind CSS v4, TypeScript strict, Serwist PWA
 - **Target Audience:** Dewasa
-- **Tujuan Bisnis:** Menjangkau pasar, memperkenalkan produk dan brand, memudahkan pelanggan melakukan pemesanan.
+- **Tujuan Bisnis:** Menjangkau pasar, memperkenalkan layanan dan brand rumah sakit, memudahkan pasien booking dokter dan layanan.
 
 ## 📋 Requirements
 
@@ -15,7 +15,8 @@
 3. **[Halaman 3]** (`/path`) — [Deskripsi]
 
 ### Fitur Utama
-- [ ] 
+
+- [ ]
 
 ### Desain & UI
 

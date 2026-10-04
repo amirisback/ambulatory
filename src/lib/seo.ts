@@ -7,7 +7,7 @@ import { i18n } from "@/i18n/config";
 
 // Base URL for the site — update in .env for production
 const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
-const SITE_NAME = process.env.NEXT_PUBLIC_APP_NAME || "Amir App";
+const SITE_NAME = process.env.NEXT_PUBLIC_APP_NAME || "RS Ambulatory Care";
 
 export const seoConfig = {
   siteUrl: SITE_URL,
@@ -98,7 +98,7 @@ export function generateWebsiteJsonLd(locale: Locale) {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: `${seoConfig.siteUrl}/search?q={search_term_string}`,
+        urlTemplate: `${seoConfig.siteUrl}/dokter?q={search_term_string}`,
       },
       "query-input": "required name=search_term_string",
     },
@@ -106,15 +106,23 @@ export function generateWebsiteJsonLd(locale: Locale) {
 }
 
 /**
- * Generate JSON-LD structured data for an Organization
+ * Generate JSON-LD structured data for an Organization / Hospital
  */
 export function generateOrganizationJsonLd() {
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "Hospital",
     name: seoConfig.siteName,
     url: seoConfig.siteUrl,
     logo: `${seoConfig.siteUrl}/icon-512x512.svg`,
+    telephone: "+62-21-555-0911",
+    emergencyService: "119",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Jl. Kesehatan Terpadu No. 88",
+      addressLocality: "Jakarta",
+      addressCountry: "ID",
+    },
   };
 }
 
@@ -137,7 +145,7 @@ export function generatePageSeo({
   images?: string[];
   noIndex?: boolean;
 }): Metadata {
-  const fullTitle = pathname === "" || pathname === "/" ? title : `${title} — ${seoConfig.siteName}`;
+  const fullTitle = pathname === "" || pathname === "/" ? title : `${title} | ${seoConfig.siteName}`;
 
   return {
     metadataBase: new URL(seoConfig.siteUrl),

@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { getCurrentLocale, getCurrentDictionary } from "@/lib/i18n-server";
 import { generatePageSeo, generateOrganizationJsonLd } from "@/lib/seo";
+import { Header } from "./_components/header";
+import { Footer } from "./_components/footer";
 import { ThemeProvider } from "./providers";
 import "./globals.css";
 
@@ -38,8 +40,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#09090b" },
+    { media: "(prefers-color-scheme: light)", color: "#0d5c63" },
+    { media: "(prefers-color-scheme: dark)", color: "#0b1317" },
   ],
   width: "device-width",
   initialScale: 1,
@@ -61,7 +63,7 @@ export default async function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        {/* JSON-LD Structured Data — Organization */}
+        {/* JSON-LD Structured Data — Organization / Hospital */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -69,14 +71,16 @@ export default async function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-background text-foreground">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <Header />
+          <main className="flex-1 flex flex-col">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

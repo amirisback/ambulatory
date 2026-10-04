@@ -2,11 +2,12 @@ import type { MetadataRoute } from "next";
 
 const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
 
-// Add all your static routes here
+// Static routes for Ambulatory Care Hospital
 const staticRoutes = [
   "",          // Homepage
-  // "/about",
-  // "/contact",
+  "/layanan",  // Services & Outpatient Clinics
+  "/dokter",   // Doctor Schedule & Directory
+  "/kontak",   // Contact & Facility Location
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
