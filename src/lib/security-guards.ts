@@ -3,17 +3,27 @@ const SUSPICIOUS_PATH_PATTERNS: RegExp[] = [
   /\/\.git/i,
   /\/\.svn/i,
   /\/\.aws/i,
+  /\/\.vscode/i,
+  /\/\.idea/i,
+  /\/\.ds_store/i,
   /wp-admin/i,
   /wp-login/i,
   /wp-content/i,
   /phpmyadmin/i,
   /xmlrpc\.php/i,
   /cgi-bin/i,
+  /etc\/passwd/i,
+  /etc\/shadow/i,
+  /proc\/self/i,
+  /win\.ini/i,
+  /boot\.ini/i,
   /\.\./, // Path traversal
   /%2e%2e/i, // Encoded traversal
   /\.php$/i,
   /\.bak$/i,
   /\.config$/i,
+  /\.sql$/i,
+  /\.sqlite$/i,
 ];
 
 const MALICIOUS_USER_AGENTS: RegExp[] = [

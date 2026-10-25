@@ -37,17 +37,15 @@ export function encrypt(text: string): string {
     const iv = crypto.randomBytes(IV_LENGTH);
     const cipher = crypto.createCipheriv(ALGORITHM, key, iv);
 
-    let encrypted = cipher.update(text, "utf8", "hex");
-    encrypted += cipher.final("hex");
+    const encryptedData = Buffer.concat([
+      cipher.update(text, "utf8"),
+      cipher.final(),
+    ]);
 
     const authTag = cipher.getAuthTag();
 
     // Pack iv, authTag, and ciphertext together into a single buffer
-    const ivBuffer = iv;
-    const tagBuffer = authTag;
-    const dataBuffer = Buffer.from(encrypted, "hex");
-
-    const combinedBuffer = Buffer.concat([ivBuffer, tagBuffer, dataBuffer]);
+    const combinedBuffer = Buffer.concat([iv, authTag, encryptedData]);
 
     // Encode as URL-safe Base64
     return combinedBuffer
@@ -92,10 +90,12 @@ export function decrypt(encryptedText: string): string | null {
     const decipher = crypto.createDecipheriv(ALGORITHM, key, iv);
     decipher.setAuthTag(tag);
 
-    let decrypted = decipher.update(ciphertext.toString("hex"), "hex", "utf8");
-    decrypted += decipher.final("utf8");
+    const decryptedBuffer = Buffer.concat([
+      decipher.update(ciphertext),
+      decipher.final(),
+    ]);
 
-    return decrypted;
+    return decryptedBuffer.toString("utf8");
   } catch (error) {
     // Graceful error logging - standard for cryptographically failed inputs (e.g. tampering, expired, wrong key)
     console.error("[Decryption Error (Possibly Tampered or Invalid Key)]:", (error as Error).message);

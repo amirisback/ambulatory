@@ -2,9 +2,9 @@ import type { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'RS Ambulatory Care',
-    short_name: 'AmbulatoryCare',
-    description: 'Pusat Layanan Rawat Jalan Terpadu & Jadwal Dokter Spesialis',
+    name: 'Amir Vet Ambulatory',
+    short_name: 'AmirVet',
+    description: 'Klinik Hewan Rawat Jalan & Layanan Dokter Hewan ke Rumah (House Call)',
     start_url: '/',
     display: 'standalone',
     background_color: '#f8fafc',

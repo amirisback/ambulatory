@@ -1,11 +1,11 @@
 {
   "common": {
-    "appName": "RS Ambulatory Care",
-    "hospitalTagline": "Pusat Layanan Rawat Jalan Terpadu & Terpercaya",
-    "emergencyHotline": "119 / (021) 555-0911",
-    "emergencyText": "Gawat Darurat 24 Jam",
-    "bookAppointment": "Buat Janji Konsultasi",
-    "viewSchedule": "Lihat Jadwal Praktik",
+    "appName": "Amir Vet Ambulatory",
+    "hospitalTagline": "Klinik Hewan Rawat Jalan & Layanan Dokter Hewan ke Rumah (House Call)",
+    "emergencyHotline": "0812-3456-7890 (Emergency Vet)",
+    "emergencyText": "Darurat Anabul 24 Jam",
+    "bookAppointment": "Daftar Janji Temu Anabul",
+    "viewSchedule": "Lihat Jadwal Dokter Hewan",
     "loading": "Memuat data...",
     "error": "Terjadi kesalahan sistem",
     "retry": "Coba Lagi",
@@ -14,16 +14,16 @@
     "save": "Simpan",
     "cancel": "Batal",
     "close": "Tutup",
-    "search": "Cari dokter atau spesialisasi...",
+    "search": "Cari dokter hewan atau layanan poliklinik...",
     "or": "atau",
     "and": "dan"
   },
   "nav": {
     "home": "Beranda",
-    "services": "Layanan & Poliklinik",
-    "doctors": "Jadwal & Dokter",
-    "contact": "Kontak & Lokasi",
-    "quickBooking": "Reservasi Cepat"
+    "services": "Layanan & Poli Anabul",
+    "doctors": "Jadwal Dokter Hewan",
+    "contact": "Kontak & House Call",
+    "quickBooking": "Reservasi Anabul"
   },
   "theme": {
     "label": "Tema",
@@ -32,46 +32,46 @@
     "system": "Sistem"
   },
   "metadata": {
-    "title": "RS Ambulatory Care: Layanan Rawat Jalan Terpadu & Spesialis",
-    "description": "Portal resmi RS Ambulatory Care. Layanan rawat jalan cepat, dokter spesialis berpengalaman, fasilitas laboratorium dan radiologi modern."
+    "title": "Amir Vet Ambulatory: Layanan Dokter Hewan Rawat Jalan & House Call",
+    "description": "Klinik hewan rawat jalan dan dokter hewan ke rumah (house call) terpercaya. Reservasi online cepat, vaksinasi, steril, scaling gigi, dan rekam medis digital anabul."
   },
   "home": {
-    "heroBadge": "Layanan Rawat Jalan Unggulan",
-    "heroTitle": "Pelayanan Rawat Jalan Cepat, Nyaman, dan Terintegrasi",
-    "heroDescription": "RS Ambulatory Care menyediakan akses langsung ke dokter spesialis terkemuka, penunjang medis modern, dan sistem reservasi online tanpa antrean panjang.",
-    "ctaPrimary": "Pilih Dokter & Jadwal",
-    "ctaSecondary": "Kontak Gawat Darurat",
-    "triageTitle": "Jalur Cepat Pasien Rawat Jalan",
-    "triageDesc": "Pendaftaran instan, rekam medis digital terpadu, dan pengambilan obat langsung di farmasi terpadu.",
-    "servicesHeading": "Layanan Poliklinik Spesialis",
-    "servicesSubheading": "Klinik rawat jalan kami didukung oleh dokter spesialis dan subspesialis dengan standar mutu pelayanan medis tinggi.",
-    "doctorsHeading": "Tim Dokter Spesialis Kami",
-    "doctorsSubheading": "Jadwal praktik terjadwal rapi dan konsultasi mendalam untuk kesehatan Anda dan keluarga.",
-    "flowHeading": "Alur Pemeriksaan Rawat Jalan",
+    "heroBadge": "Layanan Dokter Hewan Rawat Jalan & House Call",
+    "heroTitle": "Perawatan Medis Terbaik Anabul, di Klinik Maupun di Rumah Anda",
+    "heroDescription": "Amir Vet Ambulatory menyediakan layanan dokter hewan praktisi untuk rawat jalan (outpatient), vaksinasi lengkap, bedah minor steril, dan layanan kunjungan ke rumah (house call) tanpa repot.",
+    "ctaPrimary": "Pilih Dokter Hewan & Jadwal",
+    "ctaSecondary": "Panggilan Darurat Anabul",
+    "triageTitle": "Layanan Ambulatori Ramah Anabul (Fear-Free)",
+    "triageDesc": "Pendaftaran instan, area tunggu terpisah kucing dan anjing, rekam medis digital, dan obat siap bawa pulang.",
+    "servicesHeading": "Layanan Poliklinik & Medis Anabul",
+    "servicesSubheading": "Layanan rawat jalan terpadu ditangani oleh dokter hewan praktisi dengan peralatan steril dan pendekatan penuh kasih sayang.",
+    "doctorsHeading": "Tim Dokter Hewan Praktisi Kami",
+    "doctorsSubheading": "Jadwal praktik terjadwal rapi dan konsultasi mendalam untuk kesehatan anabul kesayangan Anda.",
+    "flowHeading": "Alur Pemeriksaan Pasien Hewan",
     "flowSubheading": "Empat langkah teratur dari reservasi hingga penyelesaian konsultasi dengan waktu tunggu minimal.",
-    "facilitiesHeading": "Fasilitas Penunjang Medis",
-    "facilitiesSubheading": "Teknologi diagnostik terkini untuk hasil pemeriksaan akurat dan cepat."
+    "facilitiesHeading": "Fasilitas Medis & Perlengkapan Ambulatori",
+    "facilitiesSubheading": "Peralatan medis portabel modern dan fasilitas klinik higienis untuk kenyamanan pasien anabul."
   },
   "booking": {
-    "modalTitle": "Pendaftaran Janji Temu Rawat Jalan",
-    "modalSubtitle": "Silakan lengkapi formulir reservasi untuk memilih dokter dan jadwal kunjungan.",
-    "patientName": "Nama Lengkap Pasien",
-    "patientPhone": "Nomor WhatsApp / Telepon",
-    "selectClinic": "Pilih Poliklinik",
-    "selectDoctor": "Pilih Dokter Spesialis",
+    "modalTitle": "Pendaftaran Janji Temu Anabul",
+    "modalSubtitle": "Lengkapi formulir reservasi untuk memilih dokter hewan, tipe layanan klinik, atau kunjungan ke rumah (House Call).",
+    "patientName": "Nama Pemilik (Owner)",
+    "patientPhone": "Nomor WhatsApp Pemilik",
+    "selectClinic": "Pilih Layanan / Poliklinik",
+    "selectDoctor": "Pilih Dokter Hewan",
     "appointmentDate": "Tanggal Kunjungan",
     "timeSession": "Sesi Waktu Konsultasi",
-    "notes": "Keluhan Singkat (Opsional)",
-    "submitBtn": "Konfirmasi Pendaftaran",
-    "successTitle": "Reservasi Berhasil Dibuat!",
-    "successMessage": "Tiket pendaftaran rawat jalan Anda telah tercatat dalam sistem kami.",
-    "ticketNumber": "Nomor Registrasi",
-    "queueHint": "Mohon hadir 15 menit sebelum waktu konsultasi untuk proses verifikasi data di loket registrasi."
+    "notes": "Keluhan / Gejala Anabul (Opsional)",
+    "submitBtn": "Konfirmasi Pendaftaran Anabul",
+    "successTitle": "Reservasi Anabul Berhasil Dibuat!",
+    "successMessage": "Tiket janji temu klinik hewan Anda telah tercatat dalam sistem kami.",
+    "ticketNumber": "Nomor Registrasi Pasien",
+    "queueHint": "Bagi kunjungan ke klinik, mohon hadir 10 menit lebih awal menggunakan pet cargo/tali kekang demi kenyamanan anabul."
   },
   "footer": {
-    "about": "RS Ambulatory Care berdedikasi memberikan perawatan rawat jalan berkualitas tinggi dengan mengutamakan keselamatan, kenyamanan, dan efisiensi waktu pasien.",
-    "operationalHours": "Jam Operasional Poliklinik: Senin - Sabtu: 07:30 - 21:00 WIB | IGD: 24 Jam",
-    "address": "Jl. Kesehatan Terpadu No. 88, Kawasan Medis Sentral, Jakarta",
-    "copyright": "© 2026 RS Ambulatory Care. Seluruh hak cipta dilindungi undang-undang."
+    "about": "Amir Vet Ambulatory berdedikasi memberikan perawatan medis rawat jalan dan layanan dokter hewan kunjungan ke rumah (house call) terbaik dengan standar profesionalisme tinggi.",
+    "operationalHours": "Jam Operasional: Senin - Sabtu: 08:00 - 20:00 WIB | Minggu: 09:00 - 15:00 WIB | Emergency Call Siaga",
+    "address": "Jl. Margasatwa Sentral No. 42, Jakarta Selatan (Layanan House Call Seluruh Jabodetabek)",
+    "copyright": "© 2026 Amir Vet Ambulatory. Seluruh hak cipta dilindungi undang-undang."
   }
 }

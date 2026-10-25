@@ -1,7 +1,6 @@
 import { parseArgs } from "node:util";
+import { pathToFileURL } from "node:url";
 import { helloCommand } from "./commands/hello";
-
-const args = process.argv.slice(2);
 
 const options = {
   name: {
@@ -65,15 +64,14 @@ Options:
   `);
 }
 
-import { pathToFileURL } from "node:url";
-
 // Only run if called directly and not in test environment
 if (process.env.NODE_ENV !== "test" && process.argv[1]) {
   try {
     if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+      const args = process.argv.slice(2);
       runCli(args);
     }
-  } catch (e) {
+  } catch {
     // Ignore invalid URLs
   }
 }

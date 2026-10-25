@@ -15,7 +15,7 @@ export function DoctorCard({ doctor }: DoctorCardProps) {
 
   // Generate doctor initials for accessible avatar
   const initials = doctor.name
-    .replace(/^dr\.\s*|drg\.\s*/i, "")
+    .replace(/^drh\.\s*|dr\.\s*|drg\.\s*/i, "")
     .split(" ")
     .slice(0, 2)
     .map((part) => part[0])
@@ -46,7 +46,7 @@ export function DoctorCard({ doctor }: DoctorCardProps) {
           {/* Details & Schedule */}
           <div className="mt-4 space-y-2 border-t border-border pt-3.5 text-xs text-muted-foreground">
             <div className="flex items-center justify-between">
-              <span className="font-medium text-foreground">Pengalaman Klinis:</span>
+              <span className="font-medium text-foreground">Pengalaman Praktik:</span>
               <span>{doctor.experienceYears} Tahun</span>
             </div>
             <div>
@@ -63,7 +63,7 @@ export function DoctorCard({ doctor }: DoctorCardProps) {
               </div>
             </div>
             <div className="flex items-center justify-between pt-1">
-              <span className="font-medium text-foreground">Jam Konsultasi:</span>
+              <span className="font-medium text-foreground">Jam Praktik:</span>
               <span className="font-semibold text-primary">{doctor.scheduleTime}</span>
             </div>
           </div>
@@ -72,7 +72,7 @@ export function DoctorCard({ doctor }: DoctorCardProps) {
         {/* Action Button */}
         <div className="mt-5 pt-3 border-t border-border flex items-center justify-between gap-2">
           <span className="text-[11px] text-muted-foreground">
-            Kuota: <strong className="text-foreground">{doctor.dailyQuota} pasien/hari</strong>
+            Kuota: <strong className="text-foreground">{doctor.dailyQuota} anabul/hari</strong>
           </span>
           <Button
             variant="primary"
@@ -80,7 +80,7 @@ export function DoctorCard({ doctor }: DoctorCardProps) {
             onClick={() => setIsModalOpen(true)}
             aria-label={`Buat janji temu dengan ${doctor.name}`}
           >
-            Buat Janji
+            Pilih Jadwal
           </Button>
         </div>
       </div>

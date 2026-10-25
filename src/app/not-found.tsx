@@ -11,9 +11,9 @@ export default function NotFound() {
         Halaman Tidak Ditemukan
       </h1>
       <p className="mt-2 text-sm text-muted-foreground max-w-md">
-        Maaf, tautan atau halaman poliklinik yang Anda tuju tidak tersedia atau telah dipindahkan.
+        Maaf, tautan atau halaman layanan hewan yang Anda tuju tidak tersedia atau telah dipindahkan.
       </p>
-      <div className="mt-6 flex gap-3">
+      <div className="mt-6 flex flex-col sm:flex-row gap-3">
         <Link href="/">
           <Button variant="primary" size="md">
             Kembali ke Beranda
@@ -21,7 +21,7 @@ export default function NotFound() {
         </Link>
         <Link href="/dokter">
           <Button variant="outline" size="md">
-            Cari Dokter Spesialis
+            Cari Dokter Hewan
           </Button>
         </Link>
       </div>

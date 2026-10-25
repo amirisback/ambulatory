@@ -7,7 +7,7 @@ import { i18n } from "@/i18n/config";
 
 // Base URL for the site — update in .env for production
 const SITE_URL = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
-const SITE_NAME = process.env.NEXT_PUBLIC_APP_NAME || "RS Ambulatory Care";
+const SITE_NAME = process.env.NEXT_PUBLIC_APP_NAME || "Amir Vet Ambulatory";
 
 export const seoConfig = {
   siteUrl: SITE_URL,
@@ -106,21 +106,21 @@ export function generateWebsiteJsonLd(locale: Locale) {
 }
 
 /**
- * Generate JSON-LD structured data for an Organization / Hospital
+ * Generate JSON-LD structured data for Veterinary Care
  */
 export function generateOrganizationJsonLd() {
   return {
     "@context": "https://schema.org",
-    "@type": "Hospital",
+    "@type": "VeterinaryCare",
     name: seoConfig.siteName,
     url: seoConfig.siteUrl,
     logo: `${seoConfig.siteUrl}/icon-512x512.svg`,
-    telephone: "+62-21-555-0911",
-    emergencyService: "119",
+    telephone: "+62-812-3456-7890",
+    emergencyService: "0812-3456-7890",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Jl. Kesehatan Terpadu No. 88",
-      addressLocality: "Jakarta",
+      streetAddress: "Jl. Margasatwa Sentral No. 42",
+      addressLocality: "Jakarta Selatan",
       addressCountry: "ID",
     },
   };

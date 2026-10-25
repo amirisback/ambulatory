@@ -9,9 +9,9 @@ export async function generateMetadata(): Promise<Metadata> {
   const locale = await getCurrentLocale();
 
   return generatePageSeo({
-    title: "Jadwal & Tim Dokter Spesialis",
+    title: "Jadwal Praktik Dokter Hewan & House Call",
     description:
-      "Temukan jadwal praktik dokter spesialis RS Ambulatory Care. Reservasi online langsung untuk poliklinik penyakit dalam, jantung, anak, saraf, mata, dan gigi.",
+      "Temukan jadwal praktik dokter hewan berizin Amir Vet Ambulatory. Pilihan kunjungan klinik atau dokter hewan datang ke rumah Anda (house call).",
     locale,
     pathname: "/dokter",
   });
@@ -24,6 +24,7 @@ export default async function DokterPage({
 }) {
   const resolvedParams = await searchParams;
   const initialClinicFilter = resolvedParams.clinic || "";
+  const initialSearchQuery = resolvedParams.q || "";
 
   return (
     <div className="flex-1 w-full bg-background py-12 sm:py-16">
@@ -31,13 +32,13 @@ export default async function DokterPage({
         {/* Header Section */}
         <div className="max-w-3xl space-y-3">
           <Badge variant="default" className="text-xs">
-            Direktori Medis Terpadu
+            Direktori Medis Veteriner
           </Badge>
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground">
-            Jadwal Praktik & Tim Dokter Spesialis
+            Jadwal Praktik Dokter Hewan & Layanan House Call
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-            Pilih dokter spesialis sesuai kebutuhan medis Anda. Setiap dokter memiliki kuota konsultasi harian teratur demi menjaga ketelitian pemeriksaan klinis.
+            Pilih dokter hewan praktisi berizin sesuai kebutuhan anabul kesayangan Anda. Kuota konsultasi terjadwal rapi demi ketelitian pemeriksaan dan kenyamanan pasien anabul.
           </p>
         </div>
 
@@ -46,6 +47,7 @@ export default async function DokterPage({
           initialDoctors={DOCTORS_DATA}
           clinics={CLINIC_SERVICES}
           initialClinicFilter={initialClinicFilter}
+          initialSearchQuery={initialSearchQuery}
         />
       </div>
     </div>

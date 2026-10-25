@@ -12,7 +12,7 @@ export interface HeaderProps {
 }
 
 export function Header({
-  appName = "RS Ambulatory Care",
+  appName = "Amir Vet Ambulatory",
 }: HeaderProps) {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
@@ -20,8 +20,8 @@ export function Header({
 
   const navLinks = [
     { href: "/", label: "Beranda" },
-    { href: "/layanan", label: "Layanan & Poli" },
-    { href: "/dokter", label: "Jadwal & Dokter" },
+    { href: "/layanan", label: "Layanan & Poli Anabul" },
+    { href: "/dokter", label: "Dokter Hewan" },
     { href: "/kontak", label: "Kontak & Lokasi" },
   ];
 
@@ -34,17 +34,19 @@ export function Header({
             <div className="flex items-center gap-2">
               <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
               <span className="font-semibold tracking-wide">
-                Layanan Rawat Jalan & IGD Terpadu 24 Jam
+                Layanan Rawat Jalan & Dokter Hewan ke Rumah (House Call)
               </span>
             </div>
-            <div className="flex items-center gap-4">
-              <span className="hidden sm:inline">Panggilan Darurat & Ambulans:</span>
+            <div className="flex items-center gap-3">
+              <span className="hidden sm:inline">Emergency Vet & Konsultasi:</span>
               <a
-                href="tel:119"
+                href="https://wa.me/6281234567890"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-bold underline decoration-dotted hover:text-emerald-200 transition-colors"
-                aria-label="Panggil ambulans gawat darurat 119"
+                aria-label="Panggil emergency vet via WhatsApp"
               >
-                119 / (021) 555-0911
+                0812-3456-7890
               </a>
             </div>
           </div>
@@ -56,17 +58,17 @@ export function Header({
           <Link
             href="/"
             className="flex items-center gap-3 group focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary rounded-md"
-            aria-label="Beranda RS Ambulatory Care"
+            aria-label="Beranda Amir Vet Ambulatory"
           >
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-lg shadow-xs transition-transform group-hover:scale-105">
-              +
+            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-xl shadow-xs transition-transform group-hover:scale-105">
+              🐾
             </div>
             <div className="flex flex-col">
               <span className="text-base font-bold tracking-tight text-foreground sm:text-lg">
                 {appName}
               </span>
               <span className="text-[11px] font-medium text-muted-foreground hidden xs:inline">
-                Pusat Rawat Jalan & Dokter Spesialis
+                Klinik Hewan Rawat Jalan & House Call
               </span>
             </div>
           </Link>
@@ -93,19 +95,13 @@ export function Header({
 
           {/* Right Action Buttons */}
           <div className="flex items-center gap-3">
-            {/* Theme & Language Switchers disiapkan di kode namun default hidden sesuai aturan GUIDELINE.md poin 14 */}
-            {/* <div className="hidden lg:flex items-center gap-2 mr-2">
-                  <ThemeSwitcher />
-                  <LanguageSwitcher currentLocale="id" />
-                </div> */}
-
             <Button
               variant="primary"
               size="sm"
               onClick={() => setIsBookingModalOpen(true)}
               className="hidden sm:inline-flex"
             >
-              Buat Janji Dokter
+              Daftar Janji Temu Anabul
             </Button>
 
             {/* Mobile Hamburger Button */}
@@ -154,7 +150,7 @@ export function Header({
                   setIsBookingModalOpen(true);
                 }}
               >
-                Buat Janji Dokter
+                Daftar Janji Temu Anabul
               </Button>
             </div>
           </div>

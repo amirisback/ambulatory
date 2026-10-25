@@ -38,13 +38,13 @@ export default async function Home() {
                 <div className="flex items-center justify-between border-b border-border pb-4">
                   <div>
                     <span className="text-xs font-bold uppercase tracking-wider text-primary">
-                      Status Poliklinik Hari Ini
+                      Status Pelayanan Hari Ini
                     </span>
                     <h3 className="text-lg font-bold text-foreground">
-                      Layanan Rawat Jalan Buka
+                      Klinik & House Call Buka
                     </h3>
                   </div>
-                  <span className="inline-flex h-3 w-3 rounded-full bg-emerald-500" />
+                  <span className="inline-flex h-3 w-3 rounded-full bg-emerald-500 animate-pulse" />
                 </div>
 
                 <div className="space-y-3.5 text-sm">
@@ -53,9 +53,9 @@ export default async function Home() {
                       1
                     </div>
                     <div>
-                      <p className="font-semibold text-foreground">Pendaftaran Online Mandiri</p>
+                      <p className="font-semibold text-foreground">Layanan In-Clinic & House Call</p>
                       <p className="text-xs text-muted-foreground">
-                        Pilih dokter dan sesi jam sebelum berangkat untuk verifikasi instan.
+                        Pilih datang ke klinik atau dokter hewan berkunjung ke tempat Anda.
                       </p>
                     </div>
                   </div>
@@ -65,9 +65,9 @@ export default async function Home() {
                       2
                     </div>
                     <div>
-                      <p className="font-semibold text-foreground">Laboratorium & Radiologi Siaga</p>
+                      <p className="font-semibold text-foreground">Rapid Test & Lab Darah 15 Menit</p>
                       <p className="text-xs text-muted-foreground">
-                        Hasil pemeriksaan penunjang terhubung langsung ke meja dokter.
+                        Skrining cepat virus panleuko, parvo, distemper, dan infeksi kulit.
                       </p>
                     </div>
                   </div>
@@ -77,21 +77,23 @@ export default async function Home() {
                       3
                     </div>
                     <div>
-                      <p className="font-semibold text-foreground">Gawat Darurat & Triage 24 Jam</p>
+                      <p className="font-semibold text-foreground">Fear-Free Area (Bebas Stres)</p>
                       <p className="text-xs text-muted-foreground">
-                        Tim medis siaga untuk kondisi akut dengan jalur akses darurat langsung.
+                        Zona tunggu anjing dan kucing terpisah demi ketenangan anabul.
                       </p>
                     </div>
                   </div>
                 </div>
 
                 <div className="pt-2 border-t border-border flex items-center justify-between text-xs text-muted-foreground">
-                  <span>Lokasi: Gedung Sentral Terpadu</span>
+                  <span>Area: Klinik Sentral & Jabodetabek</span>
                   <a
-                    href="tel:119"
-                    className="font-bold text-emergency hover:underline"
+                    href="https://wa.me/6281234567890"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold text-emerald-600 dark:text-emerald-400 hover:underline"
                   >
-                    Hotline: 119
+                    WA Vet: 0812-3456-7890
                   </a>
                 </div>
               </div>
@@ -109,33 +111,33 @@ export default async function Home() {
                 ⏱
               </div>
               <div>
-                <h3 className="text-sm font-bold text-foreground">Waktu Tunggu Efisien</h3>
+                <h3 className="text-sm font-bold text-foreground">Reservasi Slot Waktu Tepat</h3>
                 <p className="text-xs text-muted-foreground mt-0.5">
-                  Sistem antrean berbasis slot jam meminimalkan antrean di ruang tunggu.
+                  Sistem janji temu per jam meminimalkan anabul menunggu lama di klinik.
                 </p>
               </div>
             </div>
 
             <div className="flex items-center gap-4 p-2 border-t md:border-t-0 md:border-l border-border pt-4 md:pt-0 md:pl-6">
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary font-bold text-xl">
-                📋
+                🩺
               </div>
               <div>
-                <h3 className="text-sm font-bold text-foreground">Rekam Medis Terpusat</h3>
+                <h3 className="text-sm font-bold text-foreground">Rekam Medis Digital & Buku Vaksin</h3>
                 <p className="text-xs text-muted-foreground mt-0.5">
-                  Riwayat laboratorium dan resep terintegrasi antar seluruh poliklinik spesialis.
+                  Riwayat berat badan, imunisasi, dan alergi obat anabul tercatat rapi.
                 </p>
               </div>
             </div>
 
             <div className="flex items-center gap-4 p-2 border-t md:border-t-0 md:border-l border-border pt-4 md:pt-0 md:pl-6">
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emergency/10 text-emergency font-bold text-xl">
-                🚑
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-bold text-xl">
+                🚗
               </div>
               <div>
-                <h3 className="text-sm font-bold text-foreground">IGD & Ambulans 24 Jam</h3>
+                <h3 className="text-sm font-bold text-foreground">Ambulatori & House Call Siaga</h3>
                 <p className="text-xs text-muted-foreground mt-0.5">
-                  Respon cepat ambulans dan penanganan medis akut tanpa birokrasi rumit.
+                  Dokter hewan datang lengkap membawa tas medis dan diagnostik lapangan.
                 </p>
               </div>
             </div>
@@ -149,7 +151,7 @@ export default async function Home() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
             <div>
               <Badge variant="default" className="mb-2">
-                Poliklinik Rawat Jalan
+                Poliklinik & Layanan Anabul
               </Badge>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
                 {dict.home.servicesHeading}
@@ -162,7 +164,7 @@ export default async function Home() {
               href="/layanan"
               className="text-sm font-semibold text-primary hover:underline self-start md:self-auto"
             >
-              Lihat Semua Poliklinik & Layanan →
+              Lihat Semua Layanan Anabul →
             </Link>
           </div>
 
@@ -194,7 +196,7 @@ export default async function Home() {
                     href={`/dokter?clinic=${clinic.id}`}
                     className="font-semibold text-primary hover:underline"
                   >
-                    Dokter Praktik
+                    Dokter Hewan Praktik
                   </Link>
                 </div>
               </div>
@@ -203,13 +205,13 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* 4. Featured Specialist Doctors */}
+      {/* 4. Featured Veterinarians */}
       <section className="py-16 sm:py-20 bg-muted/40 border-b border-border">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
             <div>
               <Badge variant="default" className="mb-2">
-                Praktik Spesialis
+                Dokter Hewan Berizin
               </Badge>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
                 {dict.home.doctorsHeading}
@@ -222,7 +224,7 @@ export default async function Home() {
               href="/dokter"
               className="text-sm font-semibold text-primary hover:underline self-start md:self-auto"
             >
-              Lihat Seluruh Jadwal Dokter →
+              Lihat Jadwal Dokter Hewan →
             </Link>
           </div>
 
@@ -239,7 +241,7 @@ export default async function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <Badge variant="default" className="mb-2">
-              Alur Pelayanan Pasien
+              Alur Perawatan Anabul
             </Badge>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
               {dict.home.flowHeading}
@@ -277,7 +279,7 @@ export default async function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10">
             <Badge variant="default" className="mb-2">
-              Penunjang Medis
+              Fasilitas & Tas Medis Ambulatori
             </Badge>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
               {dict.home.facilitiesHeading}
@@ -301,7 +303,7 @@ export default async function Home() {
                 </p>
                 <div className="pt-2 border-t border-border">
                   <p className="text-xs font-semibold text-foreground mb-2">
-                    Fasilitas Unggulan:
+                    Standar Pelayanan:
                   </p>
                   <ul className="space-y-1.5 text-xs text-muted-foreground">
                     {facility.features.map((feature, i) => (
@@ -324,10 +326,10 @@ export default async function Home() {
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
             <div className="space-y-2 max-w-2xl">
               <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
-                Kebutuhan Konsultasi Spesialis atau Bantuan Medis Segera?
+                Anabul Sakit atau Butuh Dokter Hewan ke Rumah Segera?
               </h2>
               <p className="text-sm sm:text-base text-primary-foreground/80">
-                Pusat panggilan kami beroperasi 24 jam untuk melayani panduan registrasi, rujukan poliklinik, dan penjemputan ambulans gawat darurat.
+                Pusat layanan kami siaga melayani reservasi rawat jalan, vaksinasi, hingga konsultasi darurat dan penanganan kunjungan house call.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3.5 shrink-0">
@@ -335,13 +337,15 @@ export default async function Home() {
                 href="/dokter"
                 className="inline-flex h-12 items-center justify-center rounded-lg bg-card text-foreground px-6 text-sm font-bold shadow-xs hover:bg-card/90 transition-colors"
               >
-                Cari Dokter Sekarang
+                Cari Dokter Hewan
               </Link>
               <a
-                href="tel:119"
-                className="inline-flex h-12 items-center justify-center rounded-lg bg-emergency text-emergency-foreground px-6 text-sm font-bold shadow-xs hover:opacity-90 transition-opacity"
+                href="https://wa.me/6281234567890"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex h-12 items-center justify-center rounded-lg bg-emerald-600 text-white px-6 text-sm font-bold shadow-xs hover:bg-emerald-700 transition-colors"
               >
-                Telepon IGD 119
+                Chat WhatsApp Darurat
               </a>
             </div>
           </div>

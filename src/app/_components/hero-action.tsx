@@ -17,11 +17,11 @@ export function HeroAction() {
           onClick={() => setIsModalOpen(true)}
           className="w-full sm:w-auto"
         >
-          Pilih Dokter & Reservasi Jadwal
+          Pilih Dokter Hewan & Jadwal
         </Button>
         <Link href="/layanan" className="w-full sm:w-auto">
           <Button variant="outline" size="lg" className="w-full sm:w-auto">
-            Telusuri Poliklinik Spesialis
+            Telusuri Layanan Anabul
           </Button>
         </Link>
       </div>

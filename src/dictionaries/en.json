@@ -1,11 +1,11 @@
 {
   "common": {
-    "appName": "Ambulatory Care Hospital",
-    "hospitalTagline": "Integrated & Trusted Outpatient Healthcare Center",
-    "emergencyHotline": "119 / +62 21 555-0911",
-    "emergencyText": "24/7 Emergency Care",
-    "bookAppointment": "Book Appointment",
-    "viewSchedule": "View Practice Schedule",
+    "appName": "Amir Vet Ambulatory",
+    "hospitalTagline": "Veterinary Outpatient Clinic & Mobile House-Call Service",
+    "emergencyHotline": "0812-3456-7890 (Emergency Vet)",
+    "emergencyText": "24/7 Vet Emergency Care",
+    "bookAppointment": "Book Pet Appointment",
+    "viewSchedule": "View Veterinarian Schedule",
     "loading": "Loading data...",
     "error": "A system error occurred",
     "retry": "Try Again",
@@ -14,16 +14,16 @@
     "save": "Save",
     "cancel": "Cancel",
     "close": "Close",
-    "search": "Search doctor or specialty...",
+    "search": "Search veterinarian or clinic service...",
     "or": "or",
     "and": "and"
   },
   "nav": {
     "home": "Home",
-    "services": "Services & Clinics",
-    "doctors": "Doctors & Schedule",
-    "contact": "Contact & Location",
-    "quickBooking": "Fast Booking"
+    "services": "Pet Services & Polyclinics",
+    "doctors": "Veterinarian Schedules",
+    "contact": "Contact & House Call",
+    "quickBooking": "Book Anabul"
   },
   "theme": {
     "label": "Theme",
@@ -32,46 +32,46 @@
     "system": "System"
   },
   "metadata": {
-    "title": "Ambulatory Care Hospital: Integrated Outpatient Specialist Center",
-    "description": "Official portal of Ambulatory Care Hospital. Fast outpatient care, experienced specialist doctors, modern laboratory and radiology diagnostics."
+    "title": "Amir Vet Ambulatory: Veterinary Outpatient Clinic & House Call Service",
+    "description": "Trusted veterinary outpatient clinic and house-call care. Fast online booking, vaccinations, minor surgery, dental care, and digital pet medical records."
   },
   "home": {
-    "heroBadge": "Premier Outpatient Care",
-    "heroTitle": "Fast, Comfortable, and Integrated Outpatient Healthcare",
-    "heroDescription": "Ambulatory Care Hospital provides direct access to specialist physicians, modern medical diagnostics, and an online appointment system without long waiting lines.",
-    "ctaPrimary": "Find Doctor & Schedule",
-    "ctaSecondary": "24/7 Emergency Contact",
-    "triageTitle": "Outpatient Fast-Track Pathway",
-    "triageDesc": "Instant check-in, integrated digital medical records, and streamlined medication pickup at our integrated pharmacy.",
-    "servicesHeading": "Specialist Outpatient Clinics",
-    "servicesSubheading": "Our outpatient clinics are supported by specialist and subspecialist doctors adhering to strict clinical standards.",
-    "doctorsHeading": "Our Specialist Physicians",
-    "doctorsSubheading": "Well-organized clinical practice schedules and thorough consultations for your family's health.",
-    "flowHeading": "Outpatient Patient Journey",
-    "flowSubheading": "Four systematic steps from reservation to completed consultation with minimal waiting time.",
-    "facilitiesHeading": "Medical Support Facilities",
-    "facilitiesSubheading": "Modern diagnostic technology for fast, accurate clinical findings."
+    "heroBadge": "Veterinary Outpatient & Mobile House-Call Services",
+    "heroTitle": "Premier Medical Care for Your Pets, at the Clinic or in Your Home",
+    "heroDescription": "Amir Vet Ambulatory provides certified veterinary practice for outpatient checkups, comprehensive vaccinations, minor surgeries, and dedicated home visit services (House Call).",
+    "ctaPrimary": "Find Veterinarian & Book",
+    "ctaSecondary": "24/7 Vet Emergency Contact",
+    "triageTitle": "Fear-Free Pet Outpatient Pathway",
+    "triageDesc": "Instant online registration, separated cat and dog waiting bays, digital pet medical records, and prompt prescription pickup.",
+    "servicesHeading": "Veterinary Services & Polyclinics",
+    "servicesSubheading": "Integrated outpatient care handled directly by licensed veterinarians with clean equipment and compassionate care.",
+    "doctorsHeading": "Our Licensed Veterinarians",
+    "doctorsSubheading": "Well-organized clinical practice schedules and thorough consultations for your beloved companion animals.",
+    "flowHeading": "Pet Care Patient Journey",
+    "flowSubheading": "Four systematic steps from booking to completed veterinary consultation with minimal stress.",
+    "facilitiesHeading": "Veterinary Facilities & Ambulatory Gear",
+    "facilitiesSubheading": "Portable field diagnostic tools and modern clinic amenities designed for pet comfort."
   },
   "booking": {
-    "modalTitle": "Outpatient Appointment Booking",
-    "modalSubtitle": "Please fill out the reservation form to select your preferred doctor and clinic schedule.",
-    "patientName": "Full Patient Name",
+    "modalTitle": "Pet Appointment & House Call Booking",
+    "modalSubtitle": "Complete the reservation form to choose your veterinarian, clinic service, or request a home visit (House Call).",
+    "patientName": "Pet Parent (Owner Name)",
     "patientPhone": "WhatsApp / Phone Number",
-    "selectClinic": "Select Clinic",
-    "selectDoctor": "Select Specialist Doctor",
+    "selectClinic": "Select Veterinary Service",
+    "selectDoctor": "Select Veterinarian",
     "appointmentDate": "Appointment Date",
     "timeSession": "Consultation Session",
-    "notes": "Brief Health Concern (Optional)",
-    "submitBtn": "Confirm Appointment",
-    "successTitle": "Appointment Successfully Confirmed!",
-    "successMessage": "Your outpatient registration ticket has been registered in our system.",
-    "ticketNumber": "Registration Code",
-    "queueHint": "Please arrive 15 minutes before your consultation session for registration verification."
+    "notes": "Symptoms / Health Concerns (Optional)",
+    "submitBtn": "Confirm Pet Appointment",
+    "successTitle": "Pet Appointment Confirmed!",
+    "successMessage": "Your veterinary registration ticket has been registered in our system.",
+    "ticketNumber": "Pet Registration Code",
+    "queueHint": "For clinic visits, please arrive 10 minutes early with your pet safely in a carrier or leash."
   },
   "footer": {
-    "about": "Ambulatory Care Hospital is dedicated to delivering high-standard outpatient clinical care with strong focus on patient safety, comfort, and time efficiency.",
-    "operationalHours": "Clinic Operational Hours: Monday - Saturday: 07:30 - 21:00 WIB | ER: 24 Hours",
-    "address": "Jl. Kesehatan Terpadu No. 88, Central Medical District, Jakarta",
-    "copyright": "© 2026 Ambulatory Care Hospital. All rights reserved."
+    "about": "Amir Vet Ambulatory is dedicated to providing high-standard outpatient veterinary medical care and mobile house-call services with compassion and efficiency.",
+    "operationalHours": "Operational Hours: Monday - Saturday: 08:00 - 20:00 WIB | Sunday: 09:00 - 15:00 WIB | 24/7 Emergency On-Call",
+    "address": "Jl. Margasatwa Sentral No. 42, South Jakarta (Covering Jabodetabek House Calls)",
+    "copyright": "© 2026 Amir Vet Ambulatory. All rights reserved."
   }
 }
